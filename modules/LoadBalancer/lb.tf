@@ -43,7 +43,7 @@ resource "aws_lb_listener_rule" "rule-listener" {
 
   condition {
     host_header {
-      values = ["var.sub_domain"]
+      values = [var.sub_domain]
     }
   }
 }
